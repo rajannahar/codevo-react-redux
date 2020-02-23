@@ -5,12 +5,18 @@ import CakeContainer from './components/CakeContainer'
 import IceCreamContainer from './components/IceCreamContainer'
 import HooksCakeContainer from './components/HooksCakeContainer'
 import HooksIceCreamContainer from './components/HooksIceCreamContainer'
+import NewCakeContainer from './components/NewCakeContainer'
+import ItemContainer from './components/ItemContainer'
 import './App.css';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <ItemContainer cake />
+        <ItemContainer />
+        <hr />
+        <hr />
         <CakeContainer />
         <hr />
         <HooksCakeContainer />
@@ -18,6 +24,9 @@ function App() {
         <IceCreamContainer />
         <hr />
         <HooksIceCreamContainer />
+        <hr />
+        <NewCakeContainer />
+        <hr />
       </div>
     </Provider>
   );
