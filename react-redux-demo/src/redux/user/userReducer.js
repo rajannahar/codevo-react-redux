@@ -18,7 +18,7 @@ const reducer = (state = initialState, action) => {
 
     case FETCH_USERS_SUCCESS:
       return {
-        ...state.
+        ...state,
         loading: false,
         users: payload,
         error: ''
@@ -36,3 +36,5 @@ const reducer = (state = initialState, action) => {
       return state
   }
 }
+
+export default reducer
